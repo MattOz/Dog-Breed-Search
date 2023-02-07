@@ -14,11 +14,21 @@
 </head>
 <body>
     <h1 id="title">Pupify</h1>
-    <h2>Search for a dog breed!</h2>
-    <input id="searchBar" class="input" type="text" placeholder="Text input">
-    <button id="searchBtn" class="button">Button</button>
-    <a href="https://placeholder.com"><img src="https://via.placeholder.com/150"></a>
-
+    <div class="columns">
+        <div class="column-sm-4" id="searchHistory">
+          History
+        </div>
+        <div class="column">
+            <input id="searchBar" class="input" type="text" placeholder="Search for a dog breed!">
+            <button id="searchBtn" class="button">Button</button>
+            <a href="https://placeholder.com"><img src="https://via.placeholder.com/150"></a>
+            <button id="dogFactBtn" class="button">Show Dog Fact</button>
+            <section id="dogFactDisplay">
+                <p>Dog Fact will be displayed here.</p>
+            </section>
+        </div>
+    </div>
+    
 
 
 
