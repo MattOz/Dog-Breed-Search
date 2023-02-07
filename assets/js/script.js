@@ -18,12 +18,11 @@
 //         console.log(data)
 //     });
 
-var searchButton = document.getElementById('searchButton');
+var searchButton = document.getElementById('searchBtn');
 searchButton.addEventListener('click', getImage);
 
 function getImage () {
-    var imageContainer = document.getElementById('imageContainer');
-    var userInput = document.getElementById('userInput').value;
+    var userInput = document.getElementById('searchBar').value;
     var requestUrl = 'https:dog.ceo/api/breed/' + userInput + '/images';
 
     fetch(requestUrl)
@@ -31,6 +30,10 @@ function getImage () {
         return response.json();
         })
         .then(function (data) {
-        console.log(data);
+        console.log(data.message[0]);
+        // var imageContainer = document.getElementById('imageContainer');
+        // var currentImage = $('<img>');
+        // currentImage.value(data.message);
+        // imageContainer.append(currentImage);
     });
 }
