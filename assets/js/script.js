@@ -22,6 +22,7 @@ var searchButton = document.getElementById('searchBtn');
 searchButton.addEventListener('click', getImage);
 
 function getImage () {
+
     var userInput = document.getElementById('searchBar').value;
     var requestUrl = 'https:dog.ceo/api/breed/' + userInput + '/images';
 
@@ -30,10 +31,12 @@ function getImage () {
         return response.json();
         })
         .then(function (data) {
-        console.log(data.message[0]);
-        // var imageContainer = document.getElementById('imageContainer');
-        // var currentImage = $('<img>');
-        // currentImage.value(data.message);
-        // imageContainer.append(currentImage);
+
+        var dogImageUrl = data.message[0];
+        console.log(dogImageUrl);
+        var img = document.createElement('img');
+        img.src = dogImageUrl;
+        document.getElementById('image-container').appendChild(img);
+
     });
 }

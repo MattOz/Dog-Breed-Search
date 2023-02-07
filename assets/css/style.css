@@ -5,7 +5,8 @@
 }
 
 #image-container {
-    display: none /* needs to be switch to display block in js once search button is clicked*/
+    /* display: none  */
+    /* needs to be switch to display block in js once search button is clicked */
 }
 
 #searchBar{
