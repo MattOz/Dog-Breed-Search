@@ -24,7 +24,7 @@ searchButton.addEventListener('click', getImage);
 function getImage () {
 
     var userInput = document.getElementById('searchBar').value;
-    var requestUrl = 'https:dog.ceo/api/breed/' + userInput + '/images';
+    var requestUrl = 'https:dog.ceo/api/breed/' + userInput + '/images/random';
     var imageContainer = document.getElementById('image-container');
 
     fetch(requestUrl)
@@ -33,7 +33,7 @@ function getImage () {
         })
         .then(function (data) {
         imageContainer.textContent = "";
-        var dogImageUrl = data.message[0];
+        var dogImageUrl = data.message;
         console.log(dogImageUrl);
         var img = document.createElement('img');
         img.src = dogImageUrl;
