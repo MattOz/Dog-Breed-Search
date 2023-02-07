@@ -19,3 +19,5 @@ fetch(requestUrl2)
         .then(function (data) {
         console.log(data)
     });
+
+    //--
