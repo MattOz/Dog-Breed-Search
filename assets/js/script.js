@@ -20,4 +20,4 @@ fetch(requestUrl2)
         console.log(data)
     });
 
-    //--
+    
