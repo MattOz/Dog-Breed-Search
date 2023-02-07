@@ -20,4 +20,3 @@ fetch(factUrl)
         .then(function (data) {
         console.log(data)
     });
-
