@@ -1,9 +1,25 @@
+* {
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+}
+
+#image-container {
+    display: none /* needs to be switch to display block in js once search button is clicked*/
+}
+
 #searchBar{
     margin:0 auto;
-    
     
 }
 
 #title{
     text-align: center;
+    font-size: xx-large;
+}
+
+#searchBar {
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
 }
