@@ -25,18 +25,19 @@ function getImage () {
 
     var userInput = document.getElementById('searchBar').value;
     var requestUrl = 'https:dog.ceo/api/breed/' + userInput + '/images';
+    var imageContainer = document.getElementById('image-container');
 
     fetch(requestUrl)
     .then(function (response) {
         return response.json();
         })
         .then(function (data) {
-
+        imageContainer.textContent = "";
         var dogImageUrl = data.message[0];
         console.log(dogImageUrl);
         var img = document.createElement('img');
         img.src = dogImageUrl;
-        document.getElementById('image-container').appendChild(img);
+        imageContainer.appendChild(img);
 
     });
 }
