@@ -1,31 +1,45 @@
 * {
-    background-color: darkslategray;
+    background-color: darkslategray !important;
     color: white;
     text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: crosshair;
 }
 
-#image-container{
-    /* display: none  */
-    /* needs to be switch to display block in js once search button is clicked */
-}
-
-#searchBar{
-    margin:0 auto;
-    
-}
-
-#title{
-    text-align: center;
+.title {
+    color: white;
     font-size: xx-large;
 }
 
-#searchBar {
-    width: 100px;
-    margin: 10px;
-    padding: 10px;
+.input {
+    background-color: white !important;
+    width: 400px;
+    margin: 5px;
+    padding: 5px;
 }
 
-#title {
-    height: 100px;
-
+button {
+    width: 150px;
+    background-color: gray !important;
 }
+
+footer {
+    font-size: small;
+}
+
+.pups {
+    font-size: x-small;
+}
+
+/* Hidden elemnts that display when buttons are click on Javascript */
+
+/*.displayHistory,
+#imageContainer {
+    display: none; Currently hidden, it is displayed when search button is clicked
+}
+
+.dogFactDisplay {
+    display: none; Currently hidden, it is displayed when Fact button is clicked
+} */
