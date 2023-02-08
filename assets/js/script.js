@@ -4,6 +4,8 @@ searchButton.addEventListener('click', getImage);
 var factButton = document.getElementById('dogFactBtn');
 factButton.addEventListener('click', getFact);
 
+var historyContainer = document.getElementById('searchHistory');
+
 function getImage () {
     var userInput = document.getElementById('searchBar').value;
     var requestUrl = 'https://dog.ceo/api/breed/' + userInput + '/images/random';
@@ -21,6 +23,23 @@ function getImage () {
         img.src = dogImageUrl;
         imageContainer.appendChild(img);
     });
+    
+    var searchHistory = JSON.parse(localStorage.getItem("History")) || [];
+    searchHistory.push(userInput);
+    localStorage.setItem("History", JSON.stringify(searchHistory));
+
+    var listItem = document.createElement('button');
+    listItem.textContent = userInput;
+    historyContainer.append(listItem);
+    listItem.setAttribute('name', userInput);
+    listItem.classList.add('historyButton');
+    listItem.onclick = function () {
+        var listItemContent = listItem.textContent
+        console.log(listItemContent);
+        var select = document.querySelector('select');
+        select.value = listItemContent;
+        searchButton.click();
+    }
 }
 
 function getFact () {

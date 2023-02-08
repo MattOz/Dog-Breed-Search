@@ -25,6 +25,19 @@ button {
     background-color: gray !important;
 }
 
+.historyButton {
+    width: 100px;
+    background-color: gray;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-color: gray;
+    border-radius: 7px;
+}
+
+#searchBtn, #dogFactBtn {
+
+}
+
 footer {
     font-size: small;
 }
