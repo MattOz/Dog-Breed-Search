@@ -23,7 +23,7 @@ searchButton.addEventListener('click', getImage);
 
 function getImage () {
     var userInput = document.getElementById('searchBar').value;
-    var requestUrl = 'https:dog.ceo/api/breed/' + userInput + '/images/random';
+    var requestUrl = 'https://dog.ceo/api/breed/' + userInput + '/images/random';
     var requestUrl2 = requestUrl.replaceAll(' ', '-');
     var imageContainer = document.getElementById('image-container');
     console.log(requestUrl2);
