@@ -22,22 +22,21 @@ var searchButton = document.getElementById('searchBtn');
 searchButton.addEventListener('click', getImage);
 
 function getImage () {
-
     var userInput = document.getElementById('searchBar').value;
-    var requestUrl = 'https:dog.ceo/api/breed/' + userInput + '/images/random';
+    var requestUrl = 'https://dog.ceo/api/breed/' + userInput + '/images/random';
+    var requestUrl2 = requestUrl.replaceAll(' ', '-');
     var imageContainer = document.getElementById('image-container');
+    console.log(requestUrl2);
 
-    fetch(requestUrl)
+    fetch(requestUrl2)
     .then(function (response) {
         return response.json();
         })
         .then(function (data) {
         imageContainer.textContent = "";
         var dogImageUrl = data.message;
-        console.log(dogImageUrl);
         var img = document.createElement('img');
         img.src = dogImageUrl;
         imageContainer.appendChild(img);
-
     });
 }
