@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Breed Search</title>
+    <title>Pupify</title>
     <script src='https://code.jquery.com/jquery-3.5.1.slim.min.js'
         integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj'
         crossorigin='anonymous'></script>
@@ -14,29 +14,29 @@
 </head>
 <body>
     <h1 id="title">Pupify</h1>
+
     <div class="columns">
-        <div class="column-sm-4" id="searchHistory">
-          History
+
+        <div class="column is-one-fifth" id="searchHistory">
+        <h2>History</h2><hr>
         </div>
+
         <div class="column">
+
+            <h2>Search for a dog breed!</h2><hr>
             <input id="searchBar" class="input" type="text" placeholder="Search for a dog breed!">
             <button id="searchBtn" class="button">Button</button>
-            <a id="image-container" href="https://placeholder.com"><img src="https://via.placeholder.com/150"></a>
+
+            <div id="image-container"></div>
+
             <button id="dogFactBtn" class="button">Show Dog Fact</button>
             <section id="dogFactDisplay">
                 <p>Dog Fact will be displayed here.</p>
             </section>
+
         </div>
+
     </div>
-    
-    <h2>Search for a dog breed!</h2>
-    <input id="searchBar" class="input" type="text" placeholder="Text input">
-    <button id="searchBtn" class="button">Button</button>
-    <a id="image-container" href="https://placeholder.com"><img src="https://via.placeholder.com/150"></a>
-
-
-
-
     <script src="./assets/js/script.js"></script>
 </body>
 

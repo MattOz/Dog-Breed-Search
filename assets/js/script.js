@@ -18,19 +18,26 @@
 //         console.log(data)
 //     });
 
-var searchButton = document.getElementById('searchButton');
+var searchButton = document.getElementById('searchBtn');
 searchButton.addEventListener('click', getImage);
 
 function getImage () {
-    var imageContainer = document.getElementById('imageContainer');
-    var userInput = document.getElementById('userInput').value;
-    var requestUrl = 'https:dog.ceo/api/breed/' + userInput + '/images';
+
+    var userInput = document.getElementById('searchBar').value;
+    var requestUrl = 'https:dog.ceo/api/breed/' + userInput + '/images/random';
+    var imageContainer = document.getElementById('image-container');
 
     fetch(requestUrl)
     .then(function (response) {
         return response.json();
         })
         .then(function (data) {
-        console.log(data);
+        imageContainer.textContent = "";
+        var dogImageUrl = data.message;
+        console.log(dogImageUrl);
+        var img = document.createElement('img');
+        img.src = dogImageUrl;
+        imageContainer.appendChild(img);
+
     });
 }
