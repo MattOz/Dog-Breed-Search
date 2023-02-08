@@ -1,9 +1,5 @@
 # Pupify
 
-[Dog Pics](https://dog.ceo/dog-api)
-
-[Dog Facts](https://kinduff.github.io/dog-api/)
-
 ## Description
 
 - The purpose of this repository is to
@@ -36,9 +32,12 @@
 ### Resources
 - Bootcamp Materials
 - Class Video Recordings
-- 
 
 ### Applications Used
 - VS Code
+
+### APIs Used
+- [Dog Pics](https://dog.ceo/dog-api)
+- [Dog Facts](https://kinduff.github.io/dog-api/)
 
 ## Thank you for visiting!
