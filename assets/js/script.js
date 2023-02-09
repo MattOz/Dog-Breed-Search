@@ -21,6 +21,7 @@ function getImage () {
         var dogImageUrl = data.message;
         var img = document.createElement('img');
         img.src = dogImageUrl;
+        img.classList.add('imgStyle');
         imageContainer.appendChild(img);
     });
     
@@ -52,6 +53,7 @@ function getFact () {
         return response.json();
         })
         .then(function (data) {
+        factContainer.textContent = "";
         var fact = data.facts[0];
         factContainer.append(fact);
     });
