@@ -57,3 +57,23 @@ function getFact () {
         factContainer.append(fact);
     });
 }
+
+var searchHistory = JSON.parse(localStorage.getItem("History")) || [];
+window.onload = function () {
+    for (let index = 0; index < searchHistory.length; index++) {
+        var listItem = document.createElement('button');
+        listItem.textContent = searchHistory[index];
+        listItem.classList.add('historyButton');
+        listItem.classList.add("button");
+        listItem.classList.add("is-responsive");
+        historyContainer.append(listItem);
+    }
+}
+
+var clearButton = document.getElementById('clearSearch');
+clearButton.addEventListener('click', clearHistory);
+
+function clearHistory () {
+    localStorage.clear();
+    location.reload();
+}
