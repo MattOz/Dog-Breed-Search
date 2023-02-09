@@ -10,28 +10,21 @@
 
 * {
     background-color: var(--cafe-noir) !important;
-    color: white;
+    color: white !important;
     text-align: center;
-    margin: 5px;
+    margin: 2px;
     padding: 5px;
     font-family: 'Courier New', Courier, monospace;
     cursor: crosshair;
 }
 
-.navbar,
-.title,
-.nav-color {
-    background-color: var(--cafe-noir) !important;
-}
-
 .title {
-    color: white;
     font-size: xx-large;
-   
 }
 
 .input {
     background-color: white !important;
+    color: black  !important;
     width: 400px;
     margin: 5px;
     padding: 5px;
@@ -40,18 +33,13 @@
 button {
     width: 150px;
     background-color: var(--pistachio) !important;
+    color: var(--cafe-noir) !important;
     margin: 5px;
 }
 
 .imgStyle {
     border-radius: 5rem;
     border: solid 1px white;
-}
-
-#dogFactDisplay {
-    text-align: center;
-    padding: 10px !important;
-
 }
 
 footer {
