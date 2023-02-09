@@ -53,7 +53,6 @@ function getFact () {
         })
         .then(function (data) {
         var fact = data.facts[0];
-        console.log(fact);
         factContainer.append(fact);
     });
 }
