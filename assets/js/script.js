@@ -6,13 +6,21 @@ factButton.addEventListener('click', getFact);
 
 var historyContainer = document.getElementById('searchHistory');
 
+document.getElementById('searchHistory')
+.addEventListener('click', event => {
+    if (event.target.className.split(' ')[0] === 'historyButton'){
+        var searchBar = document.getElementById('searchBar');
+        var buttonValue = event.target.name;
+        searchBar.value = buttonValue;
+        searchButton.click();
+    }
+})
+
 function getImage () {
     var userInput = document.getElementById('searchBar').value;
     var requestUrl = 'https://dog.ceo/api/breed/' + userInput + '/images/random';
-    var requestUrl2 = requestUrl.replaceAll(' ', '-');
     var imageContainer = document.getElementById('image-container');
-    console.log(requestUrl2);
-    fetch(requestUrl2)
+    fetch(requestUrl)
     .then(function (response) {
         return response.json();
         })
@@ -36,13 +44,6 @@ function getImage () {
     listItem.classList.add('historyButton');
     listItem.classList.add("button");
     listItem.classList.add("is-responsive");
-    listItem.onclick = function () {
-        var listItemContent = listItem.textContent
-        console.log(listItemContent);
-        var select = document.querySelector('select');
-        select.value = listItemContent;
-        searchButton.click();
-    }
 }
 
 function getFact () {
@@ -55,7 +56,6 @@ function getFact () {
         .then(function (data) {
         factContainer.textContent = "";
         var fact = data.facts[0];
-        console.log(fact);
         factContainer.append(fact);
     });
 }
