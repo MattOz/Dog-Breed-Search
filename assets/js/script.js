@@ -33,6 +33,8 @@ function getImage () {
     historyContainer.append(listItem);
     listItem.setAttribute('name', userInput);
     listItem.classList.add('historyButton');
+    listItem.classList.add("button");
+    listItem.classList.add("is-responsive");
     listItem.onclick = function () {
         var listItemContent = listItem.textContent
         console.log(listItemContent);

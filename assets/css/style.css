@@ -23,19 +23,11 @@
 button {
     width: 150px;
     background-color: gray !important;
+    margin: 5px;
 }
 
-.historyButton {
-    width: 100px;
-    background-color: gray;
-    margin-right: 5px;
-    margin-left: 5px;
-    border-color: gray;
-    border-radius: 7px;
-}
-
-#searchBtn, #dogFactBtn {
-
+.hist-space {
+    margin: 5px;
 }
 
 footer {
@@ -46,13 +38,8 @@ footer {
     font-size: x-small;
 }
 
-/* Hidden elemnts that display when buttons are click on Javascript */
+/* Hidden elemnets that display when buttons are clicked on Javascript */
 
-/*.displayHistory,
-#imageContainer {
-    display: none; Currently hidden, it is displayed when search button is clicked
-}
-
-.dogFactDisplay {
-    display: none; Currently hidden, it is displayed when Fact button is clicked
+/*.displayHistory {
+    display: none;
 } */

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pupify</title>
+    <title>Pupify &#128054;</title>
     <script src='https://code.jquery.com/jquery-3.5.1.slim.min.js'
         integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj'
         crossorigin='anonymous'></script>
@@ -27,7 +27,8 @@
     <div class="columns">
         <div class="column is-full">
             <section>
-                <select class="dog-selector input" id="searchBar">
+                <p>Choose a breed below:</p>
+                <select class="dog-selector input is-responsive" id="searchBar">
                     <option value="affenpinscher">affenpinscher</option>
                     <option value="african">african</option>
                     <option value="airedale">airedale</option>
@@ -176,18 +177,21 @@
                     <option value="weimaraner">weimaraner</option>
                     <option value="whippet">whippet</option>
                     <option value="wolfhound/irish">irish wolfhound</option>
-                </select><br>
-                <button id="searchBtn" class="button">Search</button> <br>
+                </select> <br>
+                <button id="searchBtn" class="button is-responsive">Search</button> <br>
                 <section class="displayHistory">
-                    <p>Your Search History:<span id="searchHistory"></span></p>
+                    <p>
+                        Your Search History:
+                        <br>
+                        <span id="searchHistory"></span>
+                    </p>
                 </section>
                 <div id="image-container"></div>
             </section>
 
             <section>
-                <button id="dogFactBtn" class="button">Cool Pup Stuff</button>
-                <article id="dogFactDisplay">
-                </article>
+                <button id="dogFactBtn" class="button is-responsive">Cool Pup Stuff</button>
+                <article id="dogFactDisplay"></article>
             </section>
         </div>
     </div>
@@ -196,36 +200,9 @@
         <p>
             ----- Pupify Your Life ----- <br>
             Made with &#127881; by Dominic, Huda, and Matt. <br>
-            <span class="pups">...along with our pups: Goose, Lulu, and Cooper</span>
+            <span class="pups">...along with our pups: Goose, Lulu, and Cooper.</span>
         </p>
     </footer>
-
-
-
-    <!-- <h1 id="title">Pupify</h1>
-
-    <div class="columns">
-
-        <div class="column is-one-fifth" id="searchHistory">
-        <h2>History</h2><hr>
-        </div>
-
-        <div class="column">
-
-            <h2>Search for a dog breed!</h2><hr>
-            <input id="searchBar" class="input" type="text" placeholder="Search for a dog breed!">
-            <button id="searchBtn" class="button">Button</button>
-
-            <div id="image-container"></div>
-
-            <button id="dogFactBtn" class="button">Show Dog Fact</button>
-            <section id="dogFactDisplay">
-                <p>Dog Fact will be displayed here.</p>
-            </section>
-
-        </div>
-
-    </div> -->
     <script src="./assets/js/script.js"></script>
 </body>
 
