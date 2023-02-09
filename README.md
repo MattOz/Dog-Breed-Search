@@ -29,29 +29,33 @@ The purpose of this repository is to help people who are thinking about getting 
 - Fact Display
 - Styled Cursor
 - Use of Emojis
+- Use of Color Palettes
 
 ## Technologies Used :sparkles:
-
-#### Framework
-- [Bulma](https://bulma.io/)
 
 #### APIs
 - [Dog Pics](https://dog.ceo/dog-api)
 - [Dog Facts](https://kinduff.github.io/dog-api/)
 - [Request Access to proxy server](https://cors-anywhere.herokuapp.com/)
 
+#### Framework
+- [Bulma](https://bulma.io/)
+
+#### Color Palette
+- [Coolors](https://coolors.co/e3d26f-ca895f-a15e49-4e3822-2f1b25)
+
 #### Applications
 - VS Code
 
-## Successes :star2:
-- 
-- 
+### Successes :star2:
+- Both APIs are connected successfuly.
+- CSS Framework is connected successfuly.
 
-## Challenges :tornado:
+### Challenges :tornado:
 - Image API inconsistent display from their server
 - 
 
-## Future Development :bulb:
+### Future Development :bulb:
 - Due to time constraint, we could have matched the dog fact with the breed selected.
 - 
 
