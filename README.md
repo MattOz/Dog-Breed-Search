@@ -38,6 +38,7 @@ The purpose of this repository is to help people who are thinking about getting 
 #### APIs
 - [Dog Pics](https://dog.ceo/dog-api)
 - [Dog Facts](https://kinduff.github.io/dog-api/)
+- [Request Access to proxy server](https://cors-anywhere.herokuapp.com/)
 
 #### Applications
 - VS Code
