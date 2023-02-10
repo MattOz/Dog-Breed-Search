@@ -51,7 +51,7 @@ function getImage() {
     function renderSearch() {
         historyContainer.innerHTML = "";
         for (var index = 0; index < searchHistory.length; index++) {
-            historyContainer.innerHTML += '<button class="historyButton button is-responsive" type="button" name="' + userInput + '">' + searchHistory[index] + '</button>';
+            historyContainer.innerHTML += '<button class="historyButton button is-responsive" type="button" name="' + searchHistory[index] + '">' + searchHistory[index] + '</button>';
         }
     }
     renderSearch();
