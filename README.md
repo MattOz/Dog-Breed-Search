@@ -9,7 +9,6 @@ The purpose of this repository is to help people who are thinking about getting 
 - I WANT to see what a particular breed looks like and know some information about dogs
 - SO THAT I can decide if I should to get a dog or not
 
-
 ## Usage :wrench:
 
 - [Click here](https://mattoz.github.io/Pupify/) to navigate to the live link of this repository.
