@@ -12,7 +12,7 @@ The purpose of this repository is to help people who are thinking about getting 
 
 ## Usage :wrench:
 
-- [Click here](https://mattoz.github.io/Dog-Breed-Search/) to navigate to the live link of this repository.
+- [Click here](https://mattoz.github.io/Pupify/) to navigate to the live link of this repository.
 - You will also need to [click here](https://cors-anywhere.herokuapp.com/corsdemo) to request access to the demo server for the Dog fact API to show up. (You will also need to keep requesting it if Dog Fact is not showing since it only allows for a temporary access for a period of time).
 
 -------------------------------------------------------------
