@@ -2,13 +2,15 @@
 
 ## Description :page_facing_up:
 
-The purpose of this repository is to help people who are thinking about getting a dog see what a particular breed looks like and learn some facts about dogs.
+- Pupify is a simple, easy to use, web app that allows the user to view images of over 140 different dog breeds.
+- Pupify also gives the user various kinds of information regarding man’s best friend! Click the “cool pup stuff” button and learn all kinds of interesting things!
+- Being dog parents ourselves, we wanted to create something as an homage to our pups who are always supporting us through this coding journey.
+- The purpose of this web app is to help people who are thinking about getting a dog see what a particular breed looks like and learn some facts about dogs.
 
 ### User Story
 - AS A person who is interested in getting a dog
 - I WANT to see what a particular breed looks like and know some information about dogs
-- SO THAT I can decide if I should to get a dog or not
-
+- SO THAT I can decide if I should to get a dog
 
 ## Usage :wrench:
 
@@ -19,7 +21,7 @@ The purpose of this repository is to help people who are thinking about getting 
 
 - You will be presented with an interactive webpage:
 
-<img src="./demo-images/demo1.png" width="600" height="400">
+<img src="./demo-images/demo1.png" width="800" height="600">
 
 -------------------------------------------------------------
 
@@ -74,22 +76,24 @@ The purpose of this repository is to help people who are thinking about getting 
 ### Applications
 - VS Code
 
+## Challenges :tornado:
+- Image API inconsistent display from their server.
+- Need to request temporary access to demo server for the Dog Facts API.
+- Search bar caused a syntax issue with user input due to spelling and casing issues. 
+
 ## Successes :star2:
 - Functional deployed website that is interactive and responsive.
 - Both APIs are connected successfully.
 - CSS Framework is connected successfully.
-
-## Challenges :tornado:
-- Image API inconsistent display from their server.
-- Need to request temporary access to demo server for the Dog Facts API.
+- earch bar issue was resolved by turning it  into a dropdown menu to avoid spelling and casing issues.
 
 ## Future Development :bulb:
-- If time is not a factor, we could match dog fact with the dog breed.
+- If time was not a factor, we could have matched dog fact with the dog breed. This would require a more extensive API for the dog fact library.
+- If money was not an issue as well, we would be able to get more thorough API data.
 
 ## Credit :medal_military:
-
+- Bootcamp Instructor and TA.
 - Bootcamp Materials.
 - Bootcamp Class Video Recordings.
-- Bootcamp Instructor and TA.
 
 <p align="center">Thank you for visiting! :hibiscus:</p>
