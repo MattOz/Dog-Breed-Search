@@ -37,15 +37,19 @@ function getImage () {
     searchHistory.push(userInput);
     localStorage.setItem("History", JSON.stringify(searchHistory));
 
-    var listItem = document.createElement('button');
-    listItem.textContent = userInput;
-    historyContainer.append(listItem);
-    listItem.setAttribute('name', userInput);
-    listItem.classList.add('historyButton');
-    listItem.classList.add("button");
-    listItem.classList.add("is-responsive");
-}
+    var searchHistory = [...new Set(searchHistory)];
+    console.log(searchHistory);
 
+    function renderSearch() {
+        historyContainer.innerHTML = "";
+        for (var index = 0; index < searchHistory.length; index++) { 
+            historyContainer.innerHTML += '<button class="historyButton button is-responsive" type="button" name="' + userInput + '">' + searchHistory[index] + '</button>';
+        }
+    }
+    
+    renderSearch();
+
+}
 function getFact () {
     var factContainer = document.getElementById("dogFactDisplay");
     var factUrl = 'https://cors-anywhere.herokuapp.com/http://dog-api.kinduff.com/api/facts?number=1'
@@ -61,10 +65,12 @@ function getFact () {
 }
 
 var searchHistory = JSON.parse(localStorage.getItem("History")) || [];
+var uniqueHistory = [...new Set(searchHistory)];
+
 window.onload = function () {
-    for (let index = 0; index < searchHistory.length; index++) {
+    for (let index = 0; index < uniqueHistory.length; index++) {
         var listItem = document.createElement('button');
-        listItem.textContent = searchHistory[index];
+        listItem.textContent = uniqueHistory[index];
         listItem.classList.add('historyButton');
         listItem.classList.add("button");
         listItem.classList.add("is-responsive");
