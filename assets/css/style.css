@@ -42,6 +42,15 @@ button {
     border: solid 1px white;
 }
 
+#cors-access {
+    font-size: x-small;
+}
+
+a {
+    color: var(--pistachio) !important;
+    font-size: x-small;
+}
+
 footer {
     font-size: small;
 }
